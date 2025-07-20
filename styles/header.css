@@ -1,0 +1,63 @@
+.header{
+  background-color: white;
+  color: black;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  
+}
+.right-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.logo-div, .about-us-div, .trending-div, .categories-div, .ai-generate-div, .right-header{
+  display: flex;
+  cursor: pointer;
+  
+}
+.log-in-button, .language-change-button{
+  display: flex;
+}
+
+.log-in-button{
+  background-color: #0011E4;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 5px;
+  border-radius: 20px;
+}
+.language-change-button{
+  background-color: gainsboro;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-right: 5px;
+  border-radius: 20px;
+}
+.logo-div{
+  background-color: #0011E4;
+  width: 50px;
+  height: 30px;
+}
+
+.log-in-text{
+  color: white
+}
+.lang{
+  color: black;
+}

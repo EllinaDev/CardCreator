@@ -1,0 +1,71 @@
+body{
+  font-family: 'Rubik', sans-serif;
+}
+.main{
+  margin-top: 100px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.big-description-section-div{
+  display: flex;
+  justify-content: space-between;
+}
+.description-div, .description-animation-div{
+  display: flex;
+}
+
+.description-div{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: end;
+}
+.description-div p {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.description-animation-div{
+  display: flex;
+  flex: 1;
+  background-color: gainsboro;
+  height: 200px;
+}
+
+.title-p{
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.title-p span {
+  display: inline-block;
+  margin-right: 10px;
+}
+.create-text{
+  color: #FF4097;
+}
+.design-text{
+  color: #0011E4;
+}
+
+.animation-container {
+  display: flex;
+  justify-content: space-between; /* Spaces between the boxes */
+  align-items: center;
+  gap: 20px;  /* Optional, for consistent spacing */
+}
+
+.animation-box {
+  background-color: gainsboro;
+  width: 100px;
+  height: 100px;
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+}
+
+
