@@ -52,18 +52,20 @@ body{
   color: #0011E4;
 }
 
-.animation-container {
+.animations-container {
   display: flex;
-  justify-content: space-between; /* Spaces between the boxes */
+  justify-content: space-between; 
   align-items: center;
-  gap: 20px;  /* Optional, for consistent spacing */
+  gap: 20px;  
+  margin-top: 20px;
 }
 
-.animation-box {
+.animation-one, .animation-two, .animation-three {
   background-color: gainsboro;
-  width: 100px;
-  height: 100px;
+  flex: 1;
+  height: 300px;
   display: flexbox;
+  border-radius: 20px;
   justify-content: center;
   align-items: center;
 }

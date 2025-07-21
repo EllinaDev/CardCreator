@@ -1,8 +1,8 @@
 .header{
   background-color: white;
   color: black;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-top: 15px;
 
   display: flex;
@@ -33,12 +33,15 @@
 
 .log-in-button{
   background-color: #0011E4;
+  color: white;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 5px;
   padding-bottom: 5px;
   margin-left: 5px;
   border-radius: 20px;
+  border: none;
+  cursor: pointer;
 }
 .language-change-button{
   background-color: gainsboro;
@@ -48,6 +51,8 @@
   padding-bottom: 5px;
   margin-right: 5px;
   border-radius: 20px;
+  border: none;
+  cursor: pointer;
 }
 .logo-div{
   background-color: #0011E4;
@@ -55,9 +60,18 @@
   height: 30px;
 }
 
-.log-in-text{
-  color: white
-}
-.lang{
-  color: black;
+
+.get-started-button{
+  background-color: #0011E4;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
 }
