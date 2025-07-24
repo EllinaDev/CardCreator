@@ -1,0 +1,49 @@
+.main{
+  margin-top: 100px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.card-pattern-title{
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.card-container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 16px;
+  padding: 20px;
+}
+.card{
+  background-color: gainsboro;
+  color: white;
+  font-size: 1.5rem;
+  height: 300px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.button-container{
+  display: flex;
+  justify-content: space-evenly;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 40px;
+}
+
+.go-back-button, .next-button{
+  background-color: #0011E4;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: .8px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+}

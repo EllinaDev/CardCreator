@@ -4,14 +4,45 @@
     <title>Card Creator </title>
     <link rel="stylesheet" href="styles/home-page.css">
     <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/general.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    
+    <script src="scripts/home-page.js" defer></script>
     
   </head>
   <body>
-    <header class="header-placeholder"></header>
+    <header class="header">
+
+        <img class="logo-div" src="images/CardSnap-Logo2.png">
+      
+      
+      <div class="about-us-div">
+        <div class="about-us-text">About Us</div>
+      </div>
+
+      <div class="trending-div">
+        <div class="trending-text">Trending</div>
+      </div>
+
+      <div class="categories-div">
+        <div class="categories-text">Categories</div>
+      </div>
+    
+      <div class="ai-generate-div">
+        <div class="ai-generate-text">AI Generate</div>
+      </div>
+
+      <div class="right-header">
+        <button class="language-change-button">Lang</button>
+        <button class="log-in-button">Log In</button>
+      </div>
+    </div>
+      
+    </header>
 
     <div class="main" >
       
@@ -24,7 +55,7 @@
               <span class="share-text"> Share</span>
             </p>
          
-            <p>
+            <p class="sub-title-p">
               Create your own E-card in minutes. Customize, share, and make someone’s day — no downloads, no fee, just a link.
             </p>
          
@@ -39,14 +70,9 @@
         <div class="animation-three"></div>
       </div>
 
-      <button class="get-started-button">Get Started</button>
+      <button class="get-started-button" id="getStartedButton">Get Started</button>
 
     </div>
-
-    <script src="scripts/header.js"></script>
-    <script>
-      loadHeader();
-    </script>
-    <script src="scripts/home-page.js"></script>
+  
   </body>
 </html>

@@ -3,7 +3,8 @@
   color: black;
   padding-left: 20px;
   padding-right: 20px;
-  margin-top: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   display: flex;
   align-items: center;
@@ -25,7 +26,9 @@
 .logo-div, .about-us-div, .trending-div, .categories-div, .ai-generate-div, .right-header{
   display: flex;
   cursor: pointer;
-  
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: .8px;
 }
 .log-in-button, .language-change-button{
   display: flex;
@@ -34,44 +37,35 @@
 .log-in-button{
   background-color: #0011E4;
   color: white;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: .8px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 9px;
+  padding-bottom: 9px;
   margin-left: 5px;
   border-radius: 20px;
   border: none;
   cursor: pointer;
 }
 .language-change-button{
-  background-color: gainsboro;
+  background-color: #e9e9ea;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: .8px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 9px;
+  padding-bottom: 9px;
   margin-right: 5px;
   border-radius: 20px;
   border: none;
   cursor: pointer;
 }
 .logo-div{
-  background-color: #0011E4;
-  width: 50px;
-  height: 30px;
+  width: auto; 
+  height: 40px;
 }
 
 
-.get-started-button{
-  background-color: #0011E4;
-  padding: 10px 20px;
-  border-radius: 20px;
-  border: none;
-  color: white;
-  cursor: pointer;
-  margin-top: 20px;
-  position: fixed;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-
-}
