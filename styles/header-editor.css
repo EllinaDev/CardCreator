@@ -1,0 +1,91 @@
+.header-editor{
+  background-color: white;
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid gainsboro;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+body{
+  background-color: ghostwhite ;
+}
+.logo, .middle-header, .right-header{
+  display: flex;
+}
+.logo{
+  width: auto; 
+  height: 40px;
+}
+.text-button-header, .color-button-header, .gifs-button-header, .images-button-header{
+  font-size: 14px;
+  background-color: white;
+  font-weight: 600;
+  letter-spacing: .8px;
+  border: none;
+  border-radius: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  cursor: pointer;
+}
+.save-button-header, .next-button-header{
+  background-color: #0011E4;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: .8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  margin-left: 5px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+.text-button-header:hover, .color-button-header:hover, .gifs-button-header:hover, .images-button-header:hover{
+  background-color: gainsboro;
+  transition: background-color 0.5s ease;
+}
+
+.main{
+  margin-top: 60px;
+  background-color: ghostwhite;
+}
+
+.card-editor-toolbar{
+  background-color: white;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  bottom: 0;
+  width: 400px;
+  height: 100vh;
+  border-right: 1px solid gainsboro;
+  border-top: 1px solid gainsboro;
+}
+
+.card-edit{
+  height: 550px;
+  width: 500px;
+  background-color: gainsboro;
+  border-radius: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 20px;
+  margin-left: 200px;
+}
+

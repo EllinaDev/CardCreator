@@ -1,19 +1,34 @@
-// File: editor.html
-
 <!DOCTYPE html>
 <html>
 <head>
   <title>Card Editor</title>
+  <link rel="stylesheet" href="styles/header-editor.css">
   <script src="scripts/editor.js"></script>
 </head>
 <body>
-  <h1>Edit Your Card</h1>
 
-  <div id="card-editor-toolbar">
-    <button onclick="changeBackground()">Change Background</button>
-    <button onclick="changeFont()">Change Font</button>
-  </div>
+<header class="header-editor">
+   <img class="logo" src="images/CardSnap-Logo2.png">
+   <div class="middle-header">
+    <button class="text-button-header">Text</button>
+    <button class="color-button-header">Color</button>
+    <button class="gifs-button-header">Gifs</button>
+    <button class="images-button-header">Images</button>
+   </div>
+   
+   <div class="right-header">
+    <button class="save-button-header">Save</button>
+    <button class="next-button-header">Next</button>
+   </div>
+   
+</header>
+<div class="main">
+  <div class="card-editor-toolbar"></div>
+    <div class="card-edit"></div>
 
-  <div id="card-container">hhhhh</div>
+
+
+</div>
+  
 </body>
 </html>
