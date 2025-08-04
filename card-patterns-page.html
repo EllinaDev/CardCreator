@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles/card-patterns-page.css">
     <link rel="stylesheet" href="styles/general.css">
 
-    <script src="scripts/card-patterns-page.js"></script>
+    <script src="scripts/card-patterns-page.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,13 +29,6 @@
     <button class="ai-generate-div">
     AI Generate</button>
 
-    <div class="arrows-div">
-      <button class="arrow-back">&lt;</button>
-
-      <button class="arrow-next">&gt;</button>
-    </div>
-    
-
     <div class="right-header">
       <button class="language-change-button">Lang</button>
       <button class="log-in-button">Log In</button>
@@ -49,8 +42,10 @@
       <p class="card-pattern-title">Choose your Snap&Card style</p>
 
       <div class="card-container">
-        <div class="card" onclick="openEditor('pattern1')">Moving Button</div>
-        <div class="card" onclick="openEditor('pattern2')">Happy Birthday</div>
+        <div class="card" data-template="template1.html">Moving Button</div>
+
+        <div class="card" data-template="template2.html">Happy Birthday</div>
+
         <div class="card">Happy valentine </div>
         <div class="card">Item 4</div>
         <div class="card">Item 5</div>
