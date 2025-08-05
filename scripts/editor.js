@@ -39,3 +39,4 @@ window.addEventListener('DOMContentLoaded', () => {
     // window.location.href = 'card-patterns.html'; 
   }
 });
+
