@@ -76,11 +76,12 @@ body{
   border-top: 1px solid gainsboro;
 }
 
-.card-edit{
+
+.template-frame{
   height: 550px;
   width: 500px;
-  background-color: gainsboro;
   border-radius: 30px;
+  border: none;
   position: absolute;
   top: 50%;
   left: 50%;

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Bokumu Ye</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #111;
+      color: #fff;
+      font-size: 48px;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      position: relative;
+    }
+
+    .poop {
+      position: absolute;
+      font-size: 32px;
+      animation: float 5s linear infinite;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(100vh) rotate(0deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-100vh) rotate(720deg);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  Bokumu ye
+
+  <script>
+    function createPoop() {
+      const poop = document.createElement('div');
+      poop.classList.add('poop');
+      poop.textContent = '💩';
+      poop.style.left = Math.random() * window.innerWidth + 'px';
+      poop.style.top = Math.random() * window.innerHeight + 'px';
+      poop.style.animationDuration = (Math.random() * 3 + 3) + 's';
+      document.body.appendChild(poop);
+      setTimeout(() => poop.remove(), 5000);
+    }
+
+    setInterval(createPoop, 300);
+  </script>
+</body>
+</html>
