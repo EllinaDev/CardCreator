@@ -1,13 +1,90 @@
 <!DOCTYPE html>
 <html>
-<head></head>
-<body>
-<div class="card" style="background-color: gainsboro;
-width: max-content;
-height: max-content;">
-  <p contenteditable="true">Do you like this card?</p>
-  <button>Yes</button>
-  <button disabled>No</button>
-</div>
-</body>
+  <head>
+    <title>Running Button</title>
+    <style>
+      body, html {
+        height: 100%;     
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(0deg, rgba(171,238,238,1) 0%, rgba(245,201,235,1) 100%);
+        font-family: Roboto, sans-serif;
+      }
+
+      .paragraph {
+        font-size: 20px;
+        text-align: center;
+        color: #EF4765;
+        margin-top: 40px;
+      }
+
+      .yes-button, .no-button {
+        color: white;
+        font-size: 16px;
+        background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+        border-radius: 12px;
+        border: 0;
+        cursor: pointer;
+        font-weight: 500;
+        padding: 8px 20px;
+        margin: 20px;
+      }
+
+      .buttons-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p class="paragraph" id="paragraph">Do you like me?</p>
+    </div>
+
+    <div class="buttons-container">
+      <div>
+        <button class="yes-button" id="yesButton">Yes</button>
+      </div>
+      <div>
+        <button class="no-button" id="noButton">No</button>
+      </div>
+    </div>
+
+    <script>
+      const yesButton = document.querySelector('#yesButton');
+      const noButton = document.querySelector('#noButton');
+      const textQuestion = document.querySelector('#paragraph');
+
+      // Load custom text if saved in localStorage
+      const questionValue = localStorage.getItem('questionInputElement');
+      textQuestion.textContent = questionValue ? questionValue : 'Do you like me?';
+
+      const yesButtonValue = localStorage.getItem('yesBtnInputElement');
+      yesButton.textContent = yesButtonValue ? yesButtonValue : 'Yes';
+
+      const noButtonValue = localStorage.getItem('noBtnInputElement');
+      noButton.textContent = noButtonValue ? noButtonValue : 'No';
+
+      // Function to move the "No" button
+      const moveButton = () => {
+        const x = Math.random() * (window.innerWidth - noButton.offsetWidth);
+        const y = Math.random() * (window.innerHeight - noButton.offsetHeight);
+
+        noButton.style.position = 'absolute';
+        noButton.style.left = `${x}px`;
+        noButton.style.top = `${y}px`;
+      };
+
+      // Events
+      yesButton.addEventListener('click', () => {
+        window.alert("I knew that 😎");
+      });
+
+      noButton.addEventListener('click', moveButton);
+      noButton.addEventListener('mouseenter', moveButton);
+    </script>
+  </body>
 </html>

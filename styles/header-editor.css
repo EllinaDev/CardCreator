@@ -66,6 +66,9 @@ body{
 
 .card-editor-toolbar{
   background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
   position: fixed;
   top: 60px;
   left: 0;
@@ -88,5 +91,16 @@ body{
   transform: translate(-50%, -50%);
   margin-top: 20px;
   margin-left: 200px;
+}
+
+
+.text-bar{
+  display: flex;
+  margin: 9px;
+  border-radius: 20px;
+  height: 30px;
+  width: 350px;
+  border-style: groove;
+  border-color: gainsboro;
 }
 
