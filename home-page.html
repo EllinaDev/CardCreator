@@ -66,6 +66,39 @@
       <button class="get-started-button" id="getStartedButton">Get Started</button>
 
     </div>
+
+
+
+
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyAIuRiPncz-lAKJBzw5BTMfnbY1m7stZ7k",
+        authDomain: "snapcard-6f192.firebaseapp.com",
+        projectId: "snapcard-6f192",
+        storageBucket: "snapcard-6f192.firebasestorage.app",
+        messagingSenderId: "440048759937",
+        appId: "1:440048759937:web:ca98f2d999ec0458660980",
+        measurementId: "G-HS55FT85WZ"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+
+      console.log("Firebase App:", app.name);  // should print [DEFAULT]
+
+    </script>
+
+
+
   
   </body>
 </html>

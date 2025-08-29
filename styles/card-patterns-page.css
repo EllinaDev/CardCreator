@@ -26,19 +26,14 @@
   border-radius: 20px;
 }
 
-.button-container{
-  display: flex;
-  justify-content: space-evenly;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 20px 40px;
-}
-
-.go-back-button, .next-button{
+.go-back-button{
+  position: fixed;     
+  bottom: 20px;        
+  left: 50%;          
+  transform: translateX(-50%);  
   background-color: #0011E4;
   color: white;
+  position: fixed;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: .8px;

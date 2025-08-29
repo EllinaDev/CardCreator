@@ -21,3 +21,10 @@ document.querySelectorAll('.card').forEach((templateDiv) => {
     }
   });
 });
+
+
+// go back 
+  const backBtn = document.getElementById('goBackBtn');
+  backBtn.addEventListener('click', () => {
+    window.history.back();
+  })
