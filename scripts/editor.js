@@ -10,6 +10,9 @@ window.addEventListener('DOMContentLoaded', () => {
       
       const doc = frame.contentDocument || frame.contentWindow.document;
       document.querySelector('.text-button-header').addEventListener('click', () => {
+
+      
+        
           // Logic for text editing, e.g., changing font properties
           const editableElements = doc.querySelectorAll('[contenteditable="true"]');
           if (editableElements.length > 0) {
@@ -25,3 +28,6 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+document.getElementById("next-button").addEventListener("click", () => {
+  window.location.href = "card.html";
+});

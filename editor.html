@@ -10,23 +10,21 @@
 <header class="header-editor">
    <img class="logo" src="images/CardSnap-Logo2.png">
    <div class="middle-header">
-    <button class="text-button-header">Text</button>
-    <button class="color-button-header">Color</button>
-    <button class="gifs-button-header">Gifs</button>
+    <button class="text-button-header" id="text-button-header">Text</button>
+    <button class="color-button-header" id="color-button-header">Color</button>
+    <button class="gifs-button-header" id="gif-button-header">Gifs</button>
     <button class="images-button-header">Images</button>
    </div>
    
    <div class="right-header">
     <button class="save-button-header">Save</button>
-    <button class="next-button-header">Next</button>
+    <button class="next-button-header" id="next-button">Next</button>
    </div>
    
 </header>
 <div class="main">
-  <div class="card-editor-toolbar">
-    <input class="text-bar" type="text" placeholder="Enter your text">
-  </div>
   
+  <iframe class="card-editor-toolbar" id="card-editor-toolbar"></iframe>
   
     <iframe id="template-frame" class="template-frame"></iframe>
   

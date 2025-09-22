@@ -22,6 +22,13 @@ document.querySelectorAll('.card').forEach((templateDiv) => {
   });
 });
 
+document.querySelectorAll('.card').forEach((templateDiv) => {
+  if(templateFile) {
+    sessionStorage.setItem('selectedTemplate', templateFile)
+  }
+
+});
+
 
 // go back 
   const backBtn = document.getElementById('goBackBtn');
